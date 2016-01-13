@@ -1,0 +1,3 @@
+# computer_vision_class
+computer_vision_class_on_udacity
+first commit
