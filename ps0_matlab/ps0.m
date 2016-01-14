@@ -6,8 +6,15 @@ img1_red=img1(:,:,1);
 % extract blue channel
 img1_blue=img1(:,:,3);
 
-img1(:,:,1)=img1_blue;
-img1(:,:,3)=img1_red;
+img2=img1;
+img2(:,:,1)=img1_blue;
+img2(:,:,3)=img1_red;
 figure(2)
-image(img1)
-imwrite(img1,'ps0-2-a-1.jpg');
+image(img2)
+imwrite(img2,'ps0-2-a-1.jpg');
+
+%% 2-b 
+% Create a monochrome image (img1_green) by selecting the green channel of image 1.
+% Output: ps0-2-b-1.jpg
+img1_green=img1(:,:,2);
+imwrite(img1_green,'ps0-2-b-1.jpg');
