@@ -18,3 +18,9 @@ imwrite(img2,'ps0-2-a-1.jpg');
 % Output: ps0-2-b-1.jpg
 img1_green=img1(:,:,2);
 imwrite(img1_green,'ps0-2-b-1.jpg');
+
+%% 2-c
+% Create a monochrome image (img1_red) by selecting the red channel of image 1
+% Output: ps0-2-c-1.jpg
+
+imwrite(img1_red,'ps0-2-c-1.jpg');
